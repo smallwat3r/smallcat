@@ -12,17 +12,25 @@ This repo contains gerber files, Kicad files, my keymap, and a version of the Vi
 - Low profile choc switches, soldered only
 - Diodeless
 - TRRS jack connector
-- Splay:
+- Splay: 
   - 10° pinkie
   - 5° ring finger
   - 2° middle finger
 
-![smallcat2](./images/smallcat2.png)
+## Case
 
-![lila](./images/lila.png)
-  
+Smallcat has a no-screw case. The base of the case is 1mm larger than the PCB, which allows
+for it to slide right in without the need for screws to hold it. I've placed 
+little bumptons under the PCB in order for the pins to not sit directly against 
+the case.
+
+![case](./images/case1.png)
+![case2](./images/case2.png)
+
 ## Keymap
 
 My QMK-Vial keymap can be found [here](https://github.com/smallwat3r/vial-keymap).
 
 ![keymap](https://github.com/smallwat3r/vial-keymap/blob/main/images/keymap.png)
+
+![lila](./images/lila.png)
