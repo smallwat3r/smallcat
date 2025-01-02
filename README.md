@@ -33,4 +33,11 @@ My QMK-Vial keymap can be found [here](https://github.com/smallwat3r/vial-keymap
 
 ![keymap](https://github.com/smallwat3r/vial-keymap/blob/main/images/keymap.png)
 
+## Firmware
+
+A UF2 file for Vial can be found [here](./firmware/smallcat_vial.uf2). Else, you can find the
+source configuration files from the
+[Vial repository](https://github.com/vial-kb/vial-qmk/tree/vial/keyboards/smallcat) (note these
+configs are not up to date with the keymap above).
+
 ![lila](./images/lila.png)
