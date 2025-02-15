@@ -2,7 +2,7 @@
 
 A 26-key split keyboard, still featuring the purr-fect code reviewer, my cat, Lila.
 
-This repo contains gerber files, Kicad files, my keymap, and a version of the QMK and Vial-QMK firmware for the Smallcat.
+This repo contains gerber files, Kicad files, my keymap, and links to a QMK and Vial-QMK firmware version for the Smallcat.
 
 ![smallcat](./images/smallcat.png)
 
@@ -27,16 +27,24 @@ the case.
 ![case](./images/case1.png)
 ![case2](./images/case2.png)
 
-## Keymap
+## Keymap 
 
-![keymap](https://github.com/smallwat3r/qmk-smallwat3r-userspace/blob/main/images/keymap.png)
+![keymap](https://github.com/smallwat3r/qmk-keymap/blob/main/images/keymap.png)
 
 ## Firmware
 
-A UF2 file for QMK and QMK-Vial can be found [here](./firmware/). 
+### for QMK
 
-I also maintain my [QMK userspace](https://github.com/smallwat3r/qmk-smallwat3r-userspace), from where you can find my QMK configuration and keymap for the Smallcat.
+I maintain my own [QMK keymap](https://github.com/smallwat3r/qmk-keymap), from where you can 
+find my QMK configuration and keymap for the Smallcat. It also contains a ready to use UF2
+file with my QMK keymap flashed.
 
-Else, you can find the source configuration files for Vial from the [Vial repository](https://github.com/vial-kb/vial-qmk/tree/vial/keyboards/smallcat).
+### for QMK-Vial
+
+Here is my old [Vial keymap](https://github.com/smallwat3r/vial-keymap) configuration, that
+also includes a UF2 file flashed with Vial.
+
+Else, you can find the source configuration files for Vial from the 
+[Vial repository](https://github.com/vial-kb/vial-qmk/tree/vial/keyboards/smallcat).
 
 ![lila](./images/lila.png)
