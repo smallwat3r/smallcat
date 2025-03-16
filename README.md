@@ -16,6 +16,8 @@ This repo contains gerber files, Kicad files, my keymap, and links to a QMK and 
   - 10° pinkie
   - 5° ring finger
   - 2° middle finger
+  
+![pcb](./images/pcb.png)
 
 ## Case
 
