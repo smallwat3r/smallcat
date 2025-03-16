@@ -24,8 +24,7 @@ for it to slide right in without the need for screws to hold it. I've placed
 little bumptons under the PCB in order for the pins to not sit directly against 
 the case.
 
-![case](./images/case1.png)
-![case2](./images/case2.png)
+![case](./images/case.png)
 
 ## Keymap 
 
