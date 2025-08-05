@@ -20,7 +20,7 @@ For both boards, the splay is the same:
 - 2x RP2040-Zero footprint, [example](https://www.waveshare.com/wiki/RP2040-Zero)
 - 26 low profile choc switches, soldered only
 - Diodeless
-- TRRS jack connector
+- 2x TRRS jack connectors
 
 ### Unibody
   
