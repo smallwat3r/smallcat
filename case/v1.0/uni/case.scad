@@ -284,9 +284,12 @@ pcb_outline = [
 ];
 
 // USB-C cutout module (on back/top edge, Y near 0)
+// Also removes base plate so it stops before the border
 module usb_cutout() {
-    translate([usb_x_position - usb_width/2, -5, bottom_thickness])
-        cube([usb_width, wall_thickness + 10, case_depth]);
+    e = 0.01;  // Epsilon to avoid coincident faces
+    cutout_depth = wall_thickness + pcb_clearance + 2.8;
+    translate([usb_x_position - usb_width/2 - e, -5, -e])
+        cube([usb_width + 2*e, cutout_depth + 5 + e, case_depth + 2*e]);
 }
 
 // Render the case

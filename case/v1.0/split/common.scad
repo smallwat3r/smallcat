@@ -174,8 +174,11 @@ left_pcb_outline = [
 ];
 
 // Connector edge cutout module (clears entire inner edge section for USB + TRRS)
+// Removes both wall and base plate so the base stops before the border
 module connector_cutout(x_pos) {
+    e = 0.01;  // Epsilon to avoid coincident faces
     cutout_length = connector_cutout_end - connector_cutout_start;
-    translate([x_pos, connector_cutout_start, bottom_thickness])
-        cube([wall_thickness + 10, cutout_length, case_depth]);
+    cutout_width = wall_thickness + pcb_clearance + 2.8;
+    translate([x_pos, connector_cutout_start - e, -e])
+        cube([cutout_width + e, cutout_length + 2*e, case_depth + 2*e]);
 }
