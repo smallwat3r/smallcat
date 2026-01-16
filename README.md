@@ -55,8 +55,6 @@ The unibody version has a few unconventional details:
 
 The Smallcat uses a no-screw case design. The base is 1mm larger than the PCB, allowing it to slide in securely. Small bumpons under the PCB prevent the pins from resting directly on the case.
 
-> Note: The case is currently only available for the split version.
-
 ![case](./images/case.png)
 
 ## Firmware
