@@ -18,7 +18,7 @@ Both versions share the same column splay:
 
 ### Split
 
-![smallcat](./images/smallcat.png)
+![smallcat](./assets/smallcat.jpeg)
 
 | Component | Specification |
 |-----------|---------------|
@@ -29,7 +29,7 @@ Both versions share the same column splay:
 
 ### Unibody
 
-![smallcat](./images/smallcat-uni.png)
+![smallcat](./assets/smallcat-uni.jpeg)
 
 | Component | Specification |
 |-----------|---------------|
@@ -43,7 +43,7 @@ The unibody version has a few unconventional details:
 
 - **Pro Micro model**: Use a Pro Micro with extra pins (18 and 24) near the middle of the board.
 
-- **Pin clearance**: The space between pins 18 and 24 is narrow. You may need to trim the plastic between them, just ensure enough remains so the metal contacts don't touch. [See photo](./images/uni-pins.png). This is a simple workaround to use the extra pins and keep the board diodeless.
+- **Pin clearance**: The space between pins 18 and 24 is narrow. You may need to trim the plastic between them, just ensure enough remains so the metal contacts don't touch. [See photo](./assets/pins_uni.jpeg). This is a simple workaround to use the extra pins and keep the board diodeless.
 
 - **Pin headers**: PCB holes are narrower than standard. Use machined conical pin headers like [these](https://www.proto-advantage.com/store/datasheets/MPH100IMP40M-G-V-TH.pdf).
 
@@ -51,14 +51,14 @@ The unibody version has a few unconventional details:
 
 ## Case
 
-The Smallcat uses a no-screw case design. The base is 1mm larger than the PCB, allowing it to slide in securely. Small bumpons under the PCB prevent the pins from resting directly on the case.
+Simple press-fit cases with no screws or hardware. The base is 1mm larger than the PCB, allowing it to slide in snugly. You may need to trim some edges slightly to ensure a tight fit. Small bumpons under the PCB prevent the pins from resting directly on the case.
 
-> Note: The case is currently only available for the split version.
-
-![case](./images/case.png)
+| Split | Uni |
+|-------|-----|
+| ![case_split](./assets/case_split.jpeg) | ![case_uni](./assets/case_uni.jpeg) |
 
 ## Firmware
 
 I maintain my own [QMK keymap](https://github.com/smallwat3r/qmk-keymap), which includes my keymap, configuration for the Smallcat, and a ready-to-flash UF2 file.
 
-![lila](./images/lila.png)
+![lila](./assets/lila.jpeg)
