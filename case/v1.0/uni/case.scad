@@ -5,8 +5,8 @@
 include <../common.scad>
 
 // USB-C cutout parameters
-usb_width = 12;            // USB-C port width with clearance
-usb_height = 4;            // USB-C port height with clearance
+usb_width = 17;            // controller width with clearance
+usb_height = 4;            // controller height with clearance
 usb_x_position = 100;      // X position of USB port center (middle top)
 
 // PCB outline points (extracted from KiCad)
