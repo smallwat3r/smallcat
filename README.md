@@ -2,7 +2,7 @@
 
 A diodeless 26-key keyboard, featuring the purr-fect code reviewer, my cat, Lila.
 
-![lila](./images/lila.png)
+![lila](./assets/lila.png)
 
 This repo contains Gerber files, KiCad files, my keymap, and links to QMK and Vial-QMK firmware for the Smallcat.
 
@@ -20,7 +20,7 @@ Both versions share the same column splay:
 
 ### Split
 
-![smallcat](./images/smallcat.png)
+![smallcat](./assets/smallcat.png)
 
 | Component | Specification |
 |-----------|---------------|
@@ -31,7 +31,7 @@ Both versions share the same column splay:
 
 ### Unibody
 
-![smallcat](./images/smallcat-uni.png)
+![smallcat](./assets/smallcat-uni.png)
 
 | Component | Specification |
 |-----------|---------------|
@@ -45,7 +45,7 @@ The unibody version has a few unconventional details:
 
 - **Pro Micro model**: Use a Pro Micro with extra pins (18 and 24) near the middle of the board.
 
-- **Pin clearance**: The space between pins 18 and 24 is narrow. You may need to trim the plastic between them, just ensure enough remains so the metal contacts don't touch. [See photo](./images/uni-pins.png). This is a simple workaround to use the extra pins and keep the board diodeless.
+- **Pin clearance**: The space between pins 18 and 24 is narrow. You may need to trim the plastic between them, just ensure enough remains so the metal contacts don't touch. [See photo](./assets/uni-pins.png). This is a simple workaround to use the extra pins and keep the board diodeless.
 
 - **Pin headers**: PCB holes are narrower than standard. Use machined conical pin headers like [these](https://www.proto-advantage.com/store/datasheets/MPH100IMP40M-G-V-TH.pdf).
 
@@ -55,7 +55,7 @@ The unibody version has a few unconventional details:
 
 The Smallcat uses a no-screw case design. The base is 1mm larger than the PCB, allowing it to slide in securely. Small bumpons under the PCB prevent the pins from resting directly on the case.
 
-![case](./images/case.png)
+![case](./assets/case.png)
 
 ## Firmware
 
