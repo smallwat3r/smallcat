@@ -61,4 +61,4 @@ Simple press-fit cases with no screws or hardware. The base is 1mm larger than t
 
 I maintain my own [QMK keymap](https://github.com/smallwat3r/qmk-keymap), which includes my keymap, configuration for the Smallcat, and a ready-to-flash UF2 file.
 
-![lila](./images/lila.jpeg)
+![lila](./assets/lila.jpeg)
