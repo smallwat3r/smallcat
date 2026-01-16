@@ -2,8 +2,6 @@
 
 A diodeless 26-key keyboard, featuring the purr-fect code reviewer, my cat, Lila.
 
-![lila](./assets/lila.jpeg)
-
 This repo contains Gerber files, KiCad files, my keymap, and links to QMK and Vial-QMK firmware for the Smallcat.
 
 ## Versions
@@ -62,3 +60,5 @@ Simple press-fit cases with no screws or hardware. The base is 1mm larger than t
 ## Firmware
 
 I maintain my own [QMK keymap](https://github.com/smallwat3r/qmk-keymap), which includes my keymap, configuration for the Smallcat, and a ready-to-flash UF2 file.
+
+![lila](./images/lila.jpeg)
