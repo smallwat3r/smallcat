@@ -5,7 +5,7 @@
 wall_thickness = 2;        // Wall thickness in mm
 case_depth = 8;            // Total case depth in mm
 pcb_thickness = 1.6;       // PCB thickness in mm
-pcb_clearance = 1;         // Clearance around PCB in mm
+pcb_clearance = 0.2;       // Clearance around PCB in mm
 bottom_thickness = 2;      // Bottom plate thickness in mm
 
 // Main case module - takes PCB outline, cutout passed as children()
