@@ -2,12 +2,7 @@
 // Tray-style case design
 // PCB outline extracted from KiCad
 
-// Parameters
-wall_thickness = 2;        // Wall thickness in mm
-case_depth = 8;            // Total case depth in mm
-pcb_thickness = 1.6;       // PCB thickness in mm
-pcb_clearance = 1;         // Clearance around PCB in mm
-bottom_thickness = 2;      // Bottom plate thickness in mm
+include <../common.scad>
 
 // USB-C cutout parameters
 usb_width = 12;            // USB-C port width with clearance
@@ -294,24 +289,7 @@ module usb_cutout() {
         cube([usb_width, wall_thickness + 10, case_depth]);
 }
 
-// Main case module
-module case_bottom() {
-    difference() {
-        // Outer shell
-        linear_extrude(height=case_depth)
-            offset(r=wall_thickness + pcb_clearance)
-                polygon(pcb_outline);
-
-        // Inner cavity for PCB
-        translate([0, 0, bottom_thickness])
-            linear_extrude(height=case_depth)
-                offset(r=pcb_clearance)
-                    polygon(pcb_outline);
-
-        // USB-C cutout
-        usb_cutout();
-    }
-}
-
 // Render the case
-case_bottom();
+case_bottom(pcb_outline) {
+    usb_cutout();
+}

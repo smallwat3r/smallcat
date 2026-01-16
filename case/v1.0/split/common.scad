@@ -1,20 +1,20 @@
-// Smallcat Split Keyboard Case - Left Half
-// Tray-style case design
-// PCB outline extracted from KiCad
+// Smallcat Split Keyboard Case - Common Parameters and Modules
+// Shared code for split case variants
 
-// Parameters
-wall_thickness = 2;        // Wall thickness in mm
-case_depth = 8;            // Total case depth in mm
-pcb_thickness = 1.6;       // PCB thickness in mm
-pcb_clearance = 1;         // Clearance around PCB in mm
-bottom_thickness = 2;      // Bottom plate thickness in mm
+include <../common.scad>
 
-// Connector edge cutout parameters (clears entire edge for USB + TRRS)
+// Connector edge cutout parameters
 connector_cutout_start = 39;   // Y start position
-connector_cutout_end = 68.5;     // Y end position
+connector_cutout_end = 68.5;   // Y end position
 
-// PCB outline points (left half)
-pcb_outline = [
+// PCB dimensions
+pcb_max_x = 103.216;
+
+// Mirror points across X axis
+function mirror_x(points, max_x) = [for (p = points) [max_x - p[0], p[1]]];
+
+// Left half PCB outline (right half is mirrored from this)
+left_pcb_outline = [
     [103.194, 36.855],
     [103.216, 36.386],
     [103.119, 35.926],
@@ -174,30 +174,8 @@ pcb_outline = [
 ];
 
 // Connector edge cutout module (clears entire inner edge section for USB + TRRS)
-module connector_cutout() {
+module connector_cutout(x_pos) {
     cutout_length = connector_cutout_end - connector_cutout_start;
-    translate([-5, connector_cutout_start, bottom_thickness])
+    translate([x_pos, connector_cutout_start, bottom_thickness])
         cube([wall_thickness + 10, cutout_length, case_depth]);
 }
-
-// Main case module
-module case_bottom() {
-    difference() {
-        // Outer shell
-        linear_extrude(height=case_depth)
-            offset(r=wall_thickness + pcb_clearance)
-                polygon(pcb_outline);
-
-        // Inner cavity for PCB
-        translate([0, 0, bottom_thickness])
-            linear_extrude(height=case_depth)
-                offset(r=pcb_clearance)
-                    polygon(pcb_outline);
-
-        // Connector edge cutout (USB-C + TRRS area)
-        connector_cutout();
-    }
-}
-
-// Render the case
-case_bottom();

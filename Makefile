@@ -1,7 +1,9 @@
 OPENSCAD := openscad
 
 CASE_DIR := case
-SCAD_FILES := $(wildcard $(CASE_DIR)/*/*.scad)
+
+# Find all .scad files except common.scad (which are libraries)
+SCAD_FILES := $(shell find $(CASE_DIR) -name '*.scad' ! -name 'common.scad')
 STL_FILES := $(SCAD_FILES:.scad=.stl)
 
 .PHONY: all clean case
