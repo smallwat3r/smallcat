@@ -49,6 +49,22 @@ The unibody version has a few unconventional details:
 
 - **Controller orientation**: Install component-side up (not face-down like most keyboards). This way the boot and reset buttons are accessible.
 
+#### Unibody v2.0 (work in progress)
+
+A more compact revision of the unibody, in [`pcb/uni-v2`](./pcb/uni-v2). It has not been built yet, and there is no case for it.
+
+It uses the same controller, switches, pinout and firmware as the unibody above. The Pro Micro model, pin clearance and controller orientation build notes still apply.
+
+What changed:
+
+- **Closer together**: the two halves are pulled in towards each other and angled a little more, so your hands sit nearer the middle. The thumb keys also moved up slightly, closer to the bottom row.
+- **Controller tucked in**: the controller is now tilted and squeezed in between the inner index keys, instead of sitting upright in the middle with empty board around it.
+- **Less board**: the parts of the PCB that were doing nothing are gone, around the controller and between the thumb keys. It is about 5 mm narrower and 9% smaller overall.
+- **Cleaner front**: the traces moved to the back, so the front is just Lila.
+- **Normal pin headers work**: the controller holes are wider, so you no longer need the special machined pins. Standard headers fit, and the machined ones still do too.
+- **Properly symmetrical**: the two halves are now exact mirrors of each other. The first unibody was off by a tenth of a millimetre here and there.
+- **Two Lilas**: one on each half, facing outwards.
+
 ## Case
 
 Simple press-fit cases with no screws or hardware. The base is 1mm larger than the PCB, allowing it to slide in snugly. You may need to trim some edges slightly to ensure a tight fit. Small bumpons under the PCB prevent the pins from resting directly on the case.
