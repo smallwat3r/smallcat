@@ -11,7 +11,7 @@ The Smallcat comes as a **split** and as a **unibody**, which has two revisions.
 | Version | KiCad project | Gerbers | Case |
 |---------|---------------|---------|------|
 | [Split](#split) | [`pcb/split`](./pcb/split) | [`gerber.zip`](./pcb/split/gerber.zip) | [`case/split`](./case/split) |
-| [Unibody](#unibody) | [`pcb/uni`](./pcb/uni) | [`gerber.zip`](./pcb/uni/gerber.zip) | [`case/uni`](./case/uni) |
+| [Unibody v1.0](#unibody-v10) | [`pcb/uni-v1`](./pcb/uni-v1) | [`gerber.zip`](./pcb/uni-v1/gerber.zip) | [`case/uni-v1`](./case/uni-v1) |
 | [Unibody v2.0](#unibody-v20) | [`pcb/uni-v2`](./pcb/uni-v2) | [`gerber.zip`](./pcb/uni-v2/gerber.zip) | None yet |
 
 All versions share the same column splay:
@@ -33,9 +33,9 @@ All versions share the same column splay:
 | Diodes | None required |
 | Connection | TRRS jack |
 
-### Unibody
+### Unibody v1.0
 
-![Smallcat unibody](./assets/smallcat-uni.jpeg)
+![Smallcat unibody v1.0](./assets/smallcat-uni-v1.jpeg)
 
 | Component | Specification |
 |-----------|---------------|
@@ -49,7 +49,7 @@ See the [build notes](#unibody-build-notes) before ordering parts.
 
 ![Smallcat unibody v2.0](./assets/smallcat-uni-v2.jpeg)
 
-A more compact revision of the unibody. It uses the same controller, switches, pinout and firmware as the first one, and most of the [build notes](#unibody-build-notes) still apply.
+A more compact revision of the unibody. It uses the same controller, switches, pinout and firmware as v1.0, and most of the [build notes](#unibody-build-notes) still apply.
 
 What changed:
 
@@ -58,14 +58,14 @@ What changed:
 - **Less board**: the parts of the PCB that were doing nothing are gone, around the controller and between the thumb keys. It is about 5 mm narrower and 9% smaller overall.
 - **Cleaner front**: the traces moved to the back, so the front is just Lila.
 - **Normal pin headers work**: the controller holes are wider, so you no longer need the special machined pins. Standard headers fit, and the machined ones still do too.
-- **Properly symmetrical**: the two halves are now exact mirrors of each other. The first unibody was off by a tenth of a millimetre here and there.
+- **Properly symmetrical**: the two halves are now exact mirrors of each other. v1.0 was off by a tenth of a millimetre here and there.
 - **Two Lilas**: one on each half, facing outwards.
 
 ### Unibody build notes
 
 The unibody boards have a few unconventional details.
 
-Both revisions:
+Both v1.0 and v2.0:
 
 - **Pro Micro model**: Use a Pro Micro with extra pins (18 and 24) near the middle of the board.
 
@@ -73,17 +73,17 @@ Both revisions:
 
 - **Controller orientation**: Install component-side up (not face-down like most keyboards). This way the boot and reset buttons are accessible.
 
-First unibody only:
+v1.0 only:
 
 - **Pin headers**: PCB holes are narrower than standard. Use machined conical pin headers like [these](https://www.proto-advantage.com/store/datasheets/MPH100IMP40M-G-V-TH.pdf).
 
 ## Case
 
-Simple press-fit cases with no screws or hardware, for the split and the first unibody. The base is 1 mm larger than the PCB, allowing it to slide in snugly. You may need to trim some edges slightly to ensure a tight fit. Small bumpons under the PCB prevent the pins from resting directly on the case.
+Simple press-fit cases with no screws or hardware, for the split and the unibody v1.0. The base is 1 mm larger than the PCB, allowing it to slide in snugly. You may need to trim some edges slightly to ensure a tight fit. Small bumpons under the PCB prevent the pins from resting directly on the case.
 
-| Split | Uni |
+| Split | Unibody v1.0 |
 |-------|-----|
-| ![Split case](./assets/case_split.jpeg) | ![Unibody case](./assets/case_uni.jpeg) |
+| ![Split case](./assets/case_split.jpeg) | ![Unibody v1.0 case](./assets/case_uni-v1.jpeg) |
 
 Ready-to-print STL files sit next to their OpenSCAD sources in [`case`](./case). To regenerate them after editing a source, with OpenSCAD installed:
 
